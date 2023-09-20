@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@400;600&family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@400;600&family=Noto+Sans:wght@300;400;500&family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.App {
+  /* text-align: center; */
+}
+.navTile{
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.navTile:hover{
+  background-color: rgba(243, 243, 243, 0.836);
+  cursor: pointer;
+}
+.active{
+  font-weight: 500;
+}
+
+.logo{
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family:Pacifico;
+  font-size: 28px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.dp{
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.post{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+
+}
+
+
+
