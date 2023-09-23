@@ -43,12 +43,47 @@
   height: 2rem;
   object-fit: cover;
 }
+.dp2{
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
 .post{
   width: 100%;
   height: 60vh;
   object-fit: cover;
 
 }
+.storyDiv{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(to right,	#ffa95f 5%,
+  #f99c4a 15%,
+  #f47838 30%,
+  #e75157 45%,
+  #d92d7a 70%,
+  #cc2a92 80%,
+  #c32e92 95%);
+  padding: 3px;
 
-
+}
+.story{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  outline:1px solid white;
+}
+.footer{
+  padding: 0rem 0.2rem;
+  font-size: 14px;
+  color: gray;
+}
+.footer:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 
