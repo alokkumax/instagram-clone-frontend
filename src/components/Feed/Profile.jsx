@@ -1,7 +1,10 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import BasicModal from './BasicModal'
+
 
 export default function Profile(props) {
+
   return (
     <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"} padding={"0.5rem 1rem"}>
       <Box display={"flex"} gap={"0.5rem"}>
@@ -11,7 +14,8 @@ export default function Profile(props) {
           <Typography variant='p' fontSize={"13px"} fontFamily={"Poppins"}>{props.hint}</Typography>
         </Box>
       </Box>
-      <Typography color={"#0d23bd"} fontSize={"12px"} fontFamily={"Poppins"}>{props.btn}</Typography>
+      <BasicModal/>
+
     </Box>
   )
 }

@@ -1,11 +1,11 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Profile from './Profile'
-import suggestion from '../constants/suggestion'
+import suggestion from '../../constants/suggestion'
 import Footer from './Footer'
 export default function Suggestion() {
   return (
-    <Box paddingTop={"1rem"} flex={1} maxWidth={"350px"} >
+    <Box bgcolor={""} paddingTop={"1rem"}  width={"360px"} minWidth={"330px"} >
       <Box >
         <Profile 
           dp = "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"

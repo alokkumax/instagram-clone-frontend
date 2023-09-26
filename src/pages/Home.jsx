@@ -1,14 +1,16 @@
 import React from 'react'
-import Suggestion from '../components/Suggestion'
+import Suggestion from '../components/Feed/Suggestion'
 import Feed from '../components/Feed/Feed'
-import { Box, Stack } from '@mui/material'
+import { Box, Stack, useMediaQuery } from '@mui/material'
 
 const Home = () => {
+  const islaptop = useMediaQuery('(min-width:1260px)');
+
   return (
     <Box height={"100%"} padding={"2rem"}  width={"100%"}>
-        <Stack direction={"row"} justifyContent={"center"} mx={"12rem"} gap={"3rem"}>
+        <Stack className='feed' direction={"row"} justifyContent={"center"} gap={"3rem"}>
             <Feed/>
-            <Suggestion/>
+            { islaptop && <Suggestion/> }
         </Stack>
     </Box>
     )

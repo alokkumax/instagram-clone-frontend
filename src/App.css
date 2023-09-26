@@ -69,6 +69,35 @@
   padding: 3px;
 
 }
+.storiesDiv::-webkit-scrollbar{
+  display: none;
+}
+.storiesDiv{
+  /* position: relative;; */
+  scroll-behavior: smooth;
+}
+.leftArr,
+.rightArr{
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0px 10px;
+  border-radius: 50%;
+  display: none;
+}
+.add{
+  display: flex;
+}
+.leftArr{
+  top: 25%;
+}
+.rightArr{
+  right: 0;
+  top: 25%;
+  justify-content: flex-end;
+}
+
+
 .story{
   object-fit: cover;
   width: 100%;
@@ -86,4 +115,21 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
+.username{
+  font-size: 18px;
+  font-family: "Poppins";
+}
+.btn{
+  width: fit-content;
+  background-color: rgb(240, 240, 240);
+  border: 0px solid gray;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+/* @media max-width("") {
+  
+} */

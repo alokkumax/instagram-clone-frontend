@@ -1,10 +1,41 @@
 import React from 'react'
 import stories from '../../constants/stories'
 import { Box, ListItem, Stack, Typography } from '@mui/material'
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 export default function Stories() {
+
+    function handleIcons(){
+        const scrollDiv = document.querySelector(".storiesDiv");
+        const leftArrow =document.querySelector(".leftArr");
+        const rightArrow =document.querySelector(".rightArr");
+        const maxScrollval = scrollDiv.scrollWidth - scrollDiv.clientWidth -20;
+
+        if(scrollDiv.scrollLeft >= 10){
+            leftArrow.classList.add("add")
+        }else{
+            leftArrow.classList.remove("add")
+        }
+        if(scrollDiv.scrollLeft >= maxScrollval){
+            rightArrow.classList.remove("add")
+        }else{
+            rightArrow.classList.add("add")
+        }
+    }
+    const handelScroll = (e)=>{
+        document.querySelector(".storiesDiv").scrollLeft += 400;
+        handleIcons();
+    }
+    const handelScroll2 = () =>{
+        document.querySelector(".storiesDiv").scrollLeft -= 400;
+        handleIcons();
+    }
   return (
-    <Box  width={"fit-content"} flexWrap={"no-wrap"}>
-        <Stack display={"flex"} flexDirection={"row"} gap={"1rem"} flexWrap={"no-wrap"}>
+    <Box position={"relative"} overflow={"hidden"} width={"700px"} flexWrap={"no-wrap"} >
+        <Box className="storiesDiv" overflow={"scroll"} display={"flex"} flexDirection={"row"} gap={"1rem"} flexWrap={"no-wrap"}>
+            <Box onClick={handelScroll2} className="leftArr">
+                <KeyboardArrowLeftIcon/>
+            </Box>
             {
                 stories.map((item) => {
                     return(
@@ -17,7 +48,10 @@ export default function Stories() {
                     )
                 })
             }
-        </Stack>
+            <Box className="rightArr add" onClick={handelScroll}>
+                <KeyboardArrowRightIcon/>
+            </Box>
+        </Box>
     </Box>
   )
 }
