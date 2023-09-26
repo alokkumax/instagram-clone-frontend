@@ -17,9 +17,9 @@ export default function Post() {
             key={item.id}
             borderColor={"1px solid red"}
             flexDirection={"column"}
-            margin={"1rem 8rem"}
+            margin={""}
             padding={"2rem 0rem 0rem"}
-            width={"460px"}
+            width={"450px"}
             // bgcolor={"red"}
           >
             <Box

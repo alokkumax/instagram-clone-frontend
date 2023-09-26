@@ -5,7 +5,13 @@ import Stories from './Stories';
 import Post from './Post';
 export default function Feed() {
   return (
-      <Box   >
+      <Box 
+      // bgcolor={"pink"} 
+      display={"flex"}
+      flexDirection={"column"}
+      alignItems={"center"}
+      minWidth={"500px"} 
+      maxWidth={"600px"} >
           <Stories/>
           <Post/>
       </Box>

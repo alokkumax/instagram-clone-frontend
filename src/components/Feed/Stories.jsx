@@ -31,8 +31,20 @@ export default function Stories() {
         handleIcons();
     }
   return (
-    <Box position={"relative"} overflow={"hidden"} width={"700px"} flexWrap={"no-wrap"} >
-        <Box className="storiesDiv" overflow={"scroll"} display={"flex"} flexDirection={"row"} gap={"1rem"} flexWrap={"no-wrap"}>
+    <Box 
+    // bgcolor={"red"} 
+    position={"relative"} 
+    width={"100%"} 
+    flexWrap={"no-wrap"}
+    
+    >
+        <Box 
+            className="storiesDiv"
+            display={"flex"}
+            overflow={"hidden"}
+            gap={"0.7rem"}
+        
+        >
             <Box onClick={handelScroll2} className="leftArr">
                 <KeyboardArrowLeftIcon/>
             </Box>

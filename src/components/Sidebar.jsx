@@ -7,14 +7,17 @@ import { useLocation } from "react-router-dom";
 
 export default function Sidebar() {
   const loc = useLocation();
-  const islaptop = useMediaQuery('(min-width:1260px)');
+  const islaptop = useMediaQuery('(min-width:1380px)');
+  // const isMobile = useMediaQuery('(min-width:730px)');
+
 
   return (
     <Box
       position={"sticky"}
       height={"100vh"}
-      width={islaptop ? "20rem" : "fit-content"}
-      minWidth={islaptop ? "20rem" : "fit-content"}
+      className="side"
+      width={islaptop ? "16rem" : "fit-content"}
+      minWidth={islaptop ? "16rem" : "fit-content"}
       borderRight={"1px solid #e1e1e1"}
       display={"flex"}
       flexDirection={"column"}
