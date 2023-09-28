@@ -3,7 +3,7 @@ import stories from '../../constants/stories'
 import { Box, ListItem, Stack, Typography } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-export default function Stories() {
+export default function Stories(props) {
 
     function handleIcons(){
         const scrollDiv = document.querySelector(".storiesDiv");
@@ -34,7 +34,7 @@ export default function Stories() {
     <Box 
     // bgcolor={"red"} 
     position={"relative"} 
-    width={"100%"} 
+    width={props.width}
     flexWrap={"no-wrap"}
     
     >

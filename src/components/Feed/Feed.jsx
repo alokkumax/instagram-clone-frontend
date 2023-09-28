@@ -12,7 +12,7 @@ export default function Feed() {
       alignItems={"center"}
       minWidth={"500px"} 
       maxWidth={"600px"} >
-          <Stories/>
+          <Stories width="100%"/>
           <Post/>
       </Box>
 

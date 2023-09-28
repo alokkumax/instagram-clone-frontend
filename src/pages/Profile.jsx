@@ -10,14 +10,24 @@ const Profile = () => {
       // maxWidth={"800px"}
       // bgcolor={"pink"}
       display={"flex"}
-      flexDirection={"column"}
-      alignItems={"center"}
+      justifyContent={"center"}
       width={"100%"}
+      padding={"1rem"}
+      >
+      <Box 
+        display={"flex"}
+        width={"900px"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        flexDirection={"column"}
+        gap={"2rem"}
+        
+        >
+        <ProfileCard />
+        <Stories width={"100%"} />
+        <ProfileFeed/>
+      </Box>
       
-    >
-      <ProfileCard />
-      <Stories />
-      <ProfileFeed/>
     </Box>
   );
 };

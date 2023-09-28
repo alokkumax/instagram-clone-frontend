@@ -11,7 +11,7 @@ export default function Suggestion() {
           dp = "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
           name = "alokkumax"
           hint = "Alok Kumar"
-          btn = "Switch"
+          btn = "btn"
         />
       </Box>
       <Box padding={"1rem 1rem"} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>

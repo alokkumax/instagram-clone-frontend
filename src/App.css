@@ -131,8 +131,65 @@
   font-family: "Poppins";
   font-weight: 400;
 }
+.dpProfile{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.tabss{
+  color: gray
+}
+.activeTab{
+  border-top: 1px solid black;
+  color: black;
+}
+.postPic{
+  width: 33%; 
+  height: 20rem;
+  background-color: #cc2a92;
+  cursor: pointer;
+  position: relative;
+}
+.post-overlay {
+  background: rgba(0,0,0, .4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.postPic:hover .post-overlay{
+  display: flex;
+}
+.post-overlay > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.post-likes,
+.post-comments {
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.postPic:hover{
+
+}
+.postPic > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* @media max-width("") {
-  
 } */
 .side{
   float: left;
