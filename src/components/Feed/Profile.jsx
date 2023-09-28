@@ -11,9 +11,9 @@ export default function Profile(props) {
       alignItems={"center"}
       padding={"0.5rem 1rem"}
     >
-      <Box display={"flex"} gap={"0.5rem"}>
+      <Box display={"flex"} gap={"0.9rem"}>
         <img className="dp2" src={props.dp} />
-        <Box flexDirection={"column"} display={"flex"}>
+        <Box flexDirection={"column"} display={"flex"} justifyContent={"center"}>
           <Typography variant="p" fontSize={"16px"} fontFamily={"Poppins"}>
             <b>{props.name}</b>
           </Typography>

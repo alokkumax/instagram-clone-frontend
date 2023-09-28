@@ -1,4 +1,4 @@
-import { Box, Dialog, DialogTitle, Divider, ListItem, Tabs, Typography } from "@mui/material";
+import { Box, Divider, } from "@mui/material";
 import React, { useState } from "react";
 import profilePosts from "../../constants/profilePosts";
 import ListAltIcon from "@mui/icons-material/ListAlt";
@@ -7,8 +7,8 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ModeCommentIcon from "@mui/icons-material/ModeComment";
-import Modal from "@mui/material/Modal";
 import ViewPost from './ViewPost'
+import Modal from "./Modal";
 
 export default function ProfileFeed() {
   const tabs = [
@@ -34,15 +34,15 @@ export default function ProfileFeed() {
     },
   ];
   const [toggle, setToggle] = useState(0);
-
   function handelTab(id) {
     setToggle(id);
   }
-
-  function handlePost() {
+  const [modal, setModal] = useState(false);
+  const [selectedPost, setSelectedPost] = useState({});
+  function handlePost(selectedPost){
+    setSelectedPost(selectedPost);
+    setModal(!modal);
   }
-
-
   return (
     <Box width={"100%"}>
       <Divider bgcolor={"gray"} />
@@ -74,7 +74,7 @@ export default function ProfileFeed() {
           profilePosts.map((post) => {
             return (
               <>
-                <Box onClick={() => handlePost()} className="postPic">
+                <Box onClick={() => handlePost(post)} className="postPic">
                   <img src={post.url} />
                   <span class="post-overlay">
                     <div>
@@ -103,6 +103,7 @@ export default function ProfileFeed() {
         ) : (
           <Box>TAGGED</Box>
         )}
+       {modal && <Modal currPost = {selectedPost} toggleModal = {()=> setModal(!modal)} />}
       </Box>
     </Box>
   );

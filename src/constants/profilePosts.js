@@ -66,7 +66,7 @@ const profilePosts = [
         id : 1,
         username : "alokkumax",
         url:"https://images.pexels.com/photos/2957862/pexels-photo-2957862.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        likes : 156,
+        likes : 15,
         desc : "this is the desc of the post!!!!!!!",
         comments : [
             {   id: 0,
