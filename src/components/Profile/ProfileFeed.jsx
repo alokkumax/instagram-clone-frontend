@@ -44,7 +44,7 @@ export default function ProfileFeed() {
     setModal(!modal);
   }
   return (
-    <Box width={"100%"}>
+    <Box width={"100%"} >
       <Divider bgcolor={"gray"} />
       <Box
         display={"flex"}

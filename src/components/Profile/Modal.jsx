@@ -2,8 +2,9 @@ import { Box, Divider } from "@mui/material";
 import React from "react";
 import Profile from "../Feed/Profile";
 import Comment from "./Comment"
+import PostAction from "./PostAction";
 export default function Modal({currPost,toggleModal}) {
-    console.log(currPost.comments)
+  
   return (
     <div className="modal">
       <div className="overlay" onClick={toggleModal}></div>
@@ -12,24 +13,44 @@ export default function Modal({currPost,toggleModal}) {
             <img src={currPost.url} />
         </div>
         <div className="cmt-div" >
-            <Profile
-                dp = "https://avatars.githubusercontent.com/u/59159355?v=4"
-                name = "alokkumax"
-            />
-            <Divider/>
+            <Box position={"fixed"} top={"0"} bgcolor={"white"} width={"400px"}>
+              <Profile
+                      dp = "https://avatars.githubusercontent.com/u/59159355?v=4"
+                      name = "alokkumax"
+                  />
+              <Divider/>
+            </Box>
+            <br/>
+            <br/>
             <Comment 
-                url = {currPost.comments.url} 
-                commenterName = {currPost.comments.name}
-                comment = {currPost.comments.comment}
-                likes = {currPost.comments.likes}
-                replies = {currPost.comments.replies}
-
+                  url = "https://avatars.githubusercontent.com/u/59159355?v=4"
+                  commenterName = {currPost.username}
+                  comment = {currPost.desc}
+                  isOther = {false}
             />
-            {/* {currPost.map(post => {
-                return(
-                    <Comment  />
-                )
-            })} */}
+            {/* Comments */}
+            {currPost.comments.map(item =>{
+              return(
+               <Comment
+                  url = {item.url}
+                  commenterName = {item.name}
+                  comment = {item.comment}
+                  commentLike = {item.likes}
+                  isOther = {true}
+                  replies = {item.replies}
+
+                />
+              )
+            })}
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Box position={"fixed"} bottom={"0"} width={"400px"}>
+              <PostAction isLiked={true} likes = {currPost.likes}/>
+            </Box>
         </div>
       </div>
     </div>

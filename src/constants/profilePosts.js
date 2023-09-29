@@ -3,25 +3,46 @@ const profilePosts = [
         id : 0,
         username : "alokkumax",
         url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        likes : 156,
+        likes : 136,
         desc : "this is the desc of the post!!!!!!!",
         comments : [
             {   id: 0,
                 name : "abhilashax",
                 url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 comment : "His coin fell down 🥺🤧",
-                likes : 12,
+                likes : 4,
                 replies : [
                     {   id:0,
                         name : "alokkumax",
                         url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                        comment : "@abhilasha_4sq mujhe Kyu toda 🥺"
+                        comment : "@abhilasha_4sq mujhe Kyu toda 🥺",
+                        likes : 2,
+
                     },
                     {   id:1,
                         name : "adityal69",
                         url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                         comment : "@alokkumax ur 100rs fall down"
-                    }
+                    },
+                    {   id:2,
+                        name : "alokkumax",
+                        url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        comment : "@abhilasha_4sq mujhe Kyu toda 🥺",
+                        likes : 2,
+
+                    },
+                    {   id:3,
+                        name : "adityal69",
+                        url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        comment : "@alokkumax ur 100rs fall down"
+                    },
+                    {   id:4,
+                        name : "alokkumax",
+                        url : "https://images.pexels.com/photos/17968667/pexels-photo-17968667/free-photo-of-crossroads-of-narrow-streets-in-the-shadow-of-a-ferris-wheel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        comment : "@abhilasha_4sq mujhe Kyu toda 🥺",
+                        likes : 2,
+
+                    },
                 ]
             },
             {   id: 1,

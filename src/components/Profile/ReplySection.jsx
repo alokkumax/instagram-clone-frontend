@@ -2,9 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React, { useState } from "react";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import ReplySection from "./ReplySection";
 // import Comment from "../Profile/Comment.jsx"
-export default function Comment({
+export default function ReplySection({
   commentLike,
   url,
   commenterName,
@@ -18,17 +17,16 @@ export default function Comment({
   console.log(commenterName);
   return (
     <>
-      
       <Box
         display={"flex"}
         flexDirection={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        padding={"0.5rem 1rem"}
+        padding={"0.4rem 1rem 0.4rem 0.3rem"}
       >
         <Box>
-          <Box display={"flex"} gap={"0.9rem"} alignItems={"center"}>
-            <img className="dp" src={url} />
+          <Box display={"flex"} alignItems={"center"}>
+            <img className="dp3" src={url} />
             <Box
               flexDirection={"column"}
               display={"flex"}
@@ -64,56 +62,21 @@ export default function Comment({
               </Box>
             </Box>
           </Box>
-          
         </Box>
         {isOther &&
           (isLiked ? (
             <FavoriteIcon
-              sx={{ color: "red", fontSize:"small"}}
+              sx={{ color: "red", fontSize: "small" }}
               onClick={() => setLiked(!isLiked)}
             />
           ) : (
             <FavoriteBorderIcon
-              sx={{ color: "red", fontSize :"small" }}
+              sx={{ color: "red", fontSize: "small" }}
               onClick={() => setLiked(!isLiked)}
             />
           ))}
       </Box>
-      {isOther && (
-            <Box>
-                <details>
-                    <summary  >
-                    <Typography
-                      variant="p"
-                      marginTop={"-2rem"}
-                      fontSize={"12px"}
-                      fontFamily={"Poppins"}
-                      color={"gray"}
-                      paddingLeft={"4rem"}
-                    >
-                      - View Replies ({replies.length})
-                    </Typography>
-                    </summary>
-                      <ul>
-                        {
-                          replies.map(item =>
-                            
-                              <ReplySection
-                              url = {item.url}
-                              commenterName = {item.name}
-                              comment = {item.comment}
-                              commentLike = {item.likes}
-                              isOther = {true}
-                              replies = {item.replies}
-                              />
-                          
-                            
-                          )
-                        }
-                      </ul>
-                  </details> 
-            </Box>
-          )}
+      
     </>
   );
 }

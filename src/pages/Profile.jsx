@@ -9,6 +9,7 @@ const Profile = () => {
     <Box
       // maxWidth={"800px"}
       // bgcolor={"pink"}
+      // className= "scroll"
       display={"flex"}
       justifyContent={"center"}
       width={"100%"}
