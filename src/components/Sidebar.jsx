@@ -8,12 +8,13 @@ import { useLocation } from "react-router-dom";
 export default function Sidebar() {
   const loc = useLocation();
   const islaptop = useMediaQuery('(min-width:1380px)');
+
   // const isMobile = useMediaQuery('(min-width:730px)');
 
 
   return (
     <Box
-      position={"sticky"}
+      position={"fixed"}
       height={"100vh"}
       className="side"
       width={islaptop ? "16rem" : "fit-content"}

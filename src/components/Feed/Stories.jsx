@@ -1,9 +1,10 @@
 import React from 'react'
 import stories from '../../constants/stories'
-import { Box, ListItem, Stack, Typography } from '@mui/material'
+import { Box, ListItem, Stack, Typography, useMediaQuery } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 export default function Stories(props) {
+    const isTablet = useMediaQuery("(min-width:768px)");
 
     function handleIcons(){
         const scrollDiv = document.querySelector(".storiesDiv");
@@ -36,12 +37,13 @@ export default function Stories(props) {
     position={"relative"} 
     width={props.width}
     flexWrap={"no-wrap"}
+    marginTop={ isTablet ? "" : "3.7rem" }
     
     >
         <Box 
             className="storiesDiv"
             display={"flex"}
-            overflow={"hidden"}
+            // overflow={"hidden"}
             gap={"0.7rem"}
         
         >

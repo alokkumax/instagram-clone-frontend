@@ -8,27 +8,34 @@ import Dms from "../../src/pages/Dms";
 import Profile from "../../src/pages/Profile";
 import { Box, Stack, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BottomNavBar from "./BottomNavBar";
+import TopNavBar from "./TopNavBar";
 
 function App() {
-  const isMobile = useMediaQuery('(min-width:730px)');
+  const isTablet = useMediaQuery("(min-width:768px)");
 
   return (
     <Router>
       <Box>
-        <Stack direction={"row"} display={"flex"} alignItems={"start"} >
-         <Sidebar/> 
+        <Stack direction={"row"} display={"flex"} alignItems={"start"}>
+          {isTablet ? (
+            <Sidebar />
+          ) : (
+            <>
+              <BottomNavBar />
+              <TopNavBar />
+            </>
+          )}
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/explore" element={<Explore/>}/>
-            <Route path="/reels" element={<Reels/>}/>
-            <Route path="/dms" element={<Dms/>}/>
-            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/reels" element={<Reels />} />
+            <Route path="/dms" element={<Dms />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </Stack>
       </Box>
     </Router>
-      
-    
   );
 }
 

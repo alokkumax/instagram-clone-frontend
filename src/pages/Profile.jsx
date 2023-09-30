@@ -13,7 +13,7 @@ const Profile = () => {
       display={"flex"}
       justifyContent={"center"}
       width={"100%"}
-      padding={"1rem"}
+      padding={"2rem 2rem 2rem 14rem"} 
       >
       <Box 
         display={"flex"}

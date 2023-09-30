@@ -19,8 +19,11 @@ export default function Post() {
             flexDirection={"column"}
             margin={""}
             padding={"2rem 0rem 0rem"}
-            width={"450px"}
-            // bgcolor={"red"}
+            // width={"450px"}
+
+            minWidth={"390px"} 
+            maxWidth={"450px"}
+            // bgcolor={"blue"}
           >
             <Box
               padding={"0.6rem"}
