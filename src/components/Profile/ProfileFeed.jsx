@@ -1,4 +1,4 @@
-import { Box, Divider, } from "@mui/material";
+import { Box, Divider, useMediaQuery, } from "@mui/material";
 import React, { useState } from "react";
 import profilePosts from "../../constants/profilePosts";
 import ListAltIcon from "@mui/icons-material/ListAlt";
@@ -9,8 +9,12 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ModeCommentIcon from "@mui/icons-material/ModeComment";
 import ViewPost from './ViewPost'
 import Modal from "./Modal";
-
+import reel from "../../assets/reel1.mp4"
 export default function ProfileFeed() {
+  const islaptop = useMediaQuery("(min-width:1380px)");
+  const isTablet = useMediaQuery("(min-width:768px)");
+  const isMobile = useMediaQuery("(min-width:690px)");
+
   const tabs = [
     {
       id: 0,
@@ -44,12 +48,15 @@ export default function ProfileFeed() {
     setModal(!modal);
   }
   return (
-    <Box width={"100%"} >
+    <Box 
+      paddingTop={ !isTablet ? "0.7rem":"2rem"}
+     width={"50%"} 
+     minWidth={islaptop ? "60%" : isTablet? "80%" :"100%"} >
       <Divider bgcolor={"gray"} />
       <Box
         display={"flex"}
         flexDirection={"row"}
-        gap={"3rem"}
+        gap={!isTablet ? "0px" : "3rem"}
         justifyContent={"center"}
       >
         {tabs.map((item) => {
@@ -69,7 +76,7 @@ export default function ProfileFeed() {
           );
         })}
       </Box>
-      <Box display={"flex"} width={"100%"} gap={"0.2rem"} flexWrap={"wrap"}>
+      <Box display={"flex"} width={"100%"} gap={"0.3rem"} flexWrap={"wrap"} justifyContent={"center"}>
         {toggle === 0 ? (
           profilePosts.map((post) => {
             return (
@@ -103,6 +110,7 @@ export default function ProfileFeed() {
         ) : (
           <Box>TAGGED</Box>
         )}
+       
        {modal && <Modal currPost = {selectedPost} toggleModal = {()=> setModal(!modal)} />}
       </Box>
     </Box>

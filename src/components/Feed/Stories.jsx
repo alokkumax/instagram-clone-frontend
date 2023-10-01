@@ -11,8 +11,8 @@ export default function Stories(props) {
         const leftArrow =document.querySelector(".leftArr");
         const rightArrow =document.querySelector(".rightArr");
         const maxScrollval = scrollDiv.scrollWidth - scrollDiv.clientWidth -20;
-
-        if(scrollDiv.scrollLeft >= 10){
+        console.log(scrollDiv.scrollWidth , scrollDiv.clientWidth , scrollDiv.scrollLeft)
+        if(scrollDiv.scrollLeft > 20){
             leftArrow.classList.add("add")
         }else{
             leftArrow.classList.remove("add")
@@ -24,11 +24,12 @@ export default function Stories(props) {
         }
     }
     const handelScroll = (e)=>{
-        document.querySelector(".storiesDiv").scrollLeft += 400;
         handleIcons();
+
+        document.querySelector(".storiesDiv").scrollLeft += 300;
     }
     const handelScroll2 = () =>{
-        document.querySelector(".storiesDiv").scrollLeft -= 400;
+        document.querySelector(".storiesDiv").scrollLeft -= 300;
         handleIcons();
     }
   return (

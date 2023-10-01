@@ -13,7 +13,7 @@ export default function Modal({currPost,toggleModal}) {
             <img src={currPost.url} />
         </div>
         <div className="cmt-div" >
-            <Box position={"fixed"} top={"0"} bgcolor={"white"} width={"400px"}>
+            <Box position={"absolute"} top={"0"} bgcolor={"white"} minWidth={"100%"} width={"400px"}>
               <Profile
                       dp = "https://avatars.githubusercontent.com/u/59159355?v=4"
                       name = "alokkumax"
@@ -48,7 +48,7 @@ export default function Modal({currPost,toggleModal}) {
             <br/>
             <br/>
             <br/>
-            <Box position={"fixed"} bottom={"0"} width={"400px"}>
+            <Box position={"absolute"} bottom={"0"} minWidth={"100%"} width={"400px"}>
               <PostAction isLiked={true} likes = {currPost.likes}/>
             </Box>
         </div>

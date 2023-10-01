@@ -14,6 +14,7 @@ export default function Sidebar() {
 
   return (
     <Box
+      // zIndex={"1"}
       position={"fixed"}
       height={"100vh"}
       className="side"
@@ -23,6 +24,7 @@ export default function Sidebar() {
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"space-between"}
+      bgcolor={"white"}
     >
       <Box>
         {islaptop ? (

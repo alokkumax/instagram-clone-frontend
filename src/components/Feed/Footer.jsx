@@ -1,7 +1,7 @@
 import { Box, Stack, ListItem, Typography } from "@mui/material";
 import React from "react";
 
-export default function Footer() {
+export default function Footer(props) {
   const footer = [
     "About",
     "Help",
@@ -27,7 +27,7 @@ export default function Footer() {
             )
         })
     }
-    <Typography padding={"1rem 0rem"} color={"gray"} fontSize={"14px"} fontFamily={"Nunito"}>
+    <Typography padding={"1rem 0rem"} textAlign={props.align} color={"gray"} fontSize={"14px"} fontFamily={"Nunito"}>
       © 2023 INSTAGRAM FROM META
     </Typography>
     </Box>
