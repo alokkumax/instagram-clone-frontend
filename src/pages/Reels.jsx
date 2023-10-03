@@ -3,7 +3,16 @@ import { Box } from '@mui/material'
 
 const Reels = () => {
   return (
-    <Box  width={"100%"}>Reels</Box>
+    <Box 
+    // alignItems={"center"}  
+    flexDirection={"row"} 
+    justifyContent={"center"} 
+    alignItems={"center"}
+    display={"flex"}  
+    width={"100%"}
+    height={"100vh"}
+    >
+    Reels</Box>
   )
 }
 

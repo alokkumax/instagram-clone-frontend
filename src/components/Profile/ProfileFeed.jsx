@@ -10,6 +10,7 @@ import ModeCommentIcon from "@mui/icons-material/ModeComment";
 import ViewPost from './ViewPost'
 import Modal from "./Modal";
 import reel from "../../assets/reel1.mp4"
+import ModalPhone from "./ModalPhone";
 export default function ProfileFeed() {
   const islaptop = useMediaQuery("(min-width:1380px)");
   const isTablet = useMediaQuery("(min-width:768px)");
@@ -49,7 +50,7 @@ export default function ProfileFeed() {
   }
   return (
     <Box 
-      paddingTop={ !isTablet ? "0.7rem":"2rem"}
+      paddingTop={ !isTablet ? "0rem":"1rem"}
      width={"50%"} 
      minWidth={islaptop ? "60%" : isTablet? "80%" :"100%"} >
       <Divider bgcolor={"gray"} />
@@ -111,7 +112,12 @@ export default function ProfileFeed() {
           <Box>TAGGED</Box>
         )}
        
-       {modal && <Modal currPost = {selectedPost} toggleModal = {()=> setModal(!modal)} />}
+       {modal ? 
+        (isTablet ? <Modal currPost = {selectedPost} toggleModal = {()=> setModal(!modal)} /> :
+          <ModalPhone currPost = {selectedPost} toggleModal = {()=> setModal(!modal)} />
+         ) : null
+        
+       }
       </Box>
     </Box>
   );

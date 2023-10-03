@@ -1,4 +1,4 @@
-import { Box, ListItem, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box, Divider, ListItem, Stack, Typography, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import topNav from "../constants/topNav";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
@@ -14,12 +14,13 @@ export default function TopNavBar() {
   return (
     <Box
       zIndex={"1"}
+      
       bgcolor={"white"}
       position={"fixed"}
       height={"3.5rem"}
       bottom={"top"}
       width={"100%"}
-      borderBottom={"1px solid #f5f5f5"}
+      borderBottom={"0.1rem solid #cdcdcd"}
       display={"flex"}
       justifyContent={"space-between"}
     >

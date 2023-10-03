@@ -37,7 +37,7 @@ export default function BottomNavBar() {
             );
           })}
         </Stack>
-      </Box>
+    </Box>
 
       
       

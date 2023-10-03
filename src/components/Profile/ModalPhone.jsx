@@ -1,29 +1,33 @@
+import React from "react";
+import Profile from "../Feed/Profile";
+import Comment from "./Comment"
+import PostAction from "./PostAction";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
-import posts from "../../constants/post";
-import React from "react";
 import { Box, Divider, Input, ListItem, Stack, Typography } from "@mui/material";
 
-export default function Post() {
+export default function ModalPhone({currPost,toggleModal}) {
+  
   return (
-    <>
-      {posts.map((item, index) => {
-        return (
+    <Box className="modalp">
+      <div className="overlayp" onClick={toggleModal}></div>
+      <div className="modal-contentp" >
+        {
           <>
           <Box
-            key={item.id}
+            // key={item.id}
             borderColor={"1px solid red"}
             flexDirection={"column"}
             margin={""}
             padding={"2rem 0rem 0rem"}
-            // width={"450px"}
-
             minWidth={"390px"} 
-            maxWidth={"450px"}
-            // bgcolor={"blue"}
+            maxWidth={"100%"}
+            
           >
             <Box
               padding={"0.6rem"}
@@ -35,16 +39,16 @@ export default function Post() {
               flexDirection={"row"}
             >
               <Box gap={"0.5rem"} alignItems={"center"} display={"flex"}>
-                <img className="dp" src={item.dp} />
+                <img className="dp" src={currPost.url} />
                 <span style={{ fontWeight: "500", fontFamily: "Nunito" }}>
-                  {item.username}
+                  {currPost.username}
                 </span>
               </Box>
               <div>
                 <MoreHorizOutlinedIcon />
               </div>
             </Box>
-            <img src={item.url} className="post" />
+            <img src={currPost.url} className="postP" />
             <Box
               display={"flex"}
               padding={"0.5rem 0.5rem"}
@@ -60,20 +64,33 @@ export default function Post() {
             </Box>
             <Box padding={"0.5rem 0.5rem"} display={"flex"} flexDirection={"column"}>
               <Typography variant="p">
-                <b>{item.likesCount} likes</b>
+                <b>{currPost.likes} likes</b>
               </Typography>
               <Typography variant="p">
-                <b>{item.username}</b> {item.desc}
+                <b>{currPost.username}</b> desc
               </Typography>
               <Typography padding={"0.5rem 0rem"} variant="p">
-                View all {item.commentsCount} comments
+                View all {currPost.comments.length} comments
               </Typography>
               <Input style={{borderBottom:"0px solid white"}} padding={"0.5rem"} placeholder="Add a comment" />
             </Box>
           </Box>
           </>
-        );
-      })}
-    </>
+        }
+
+        {/* <Box>2</Box> */}
+        <Box 
+          position={"absolute"}
+          top={"8%"}
+          left={"0%"}
+          onClick={toggleModal}
+          display={"flex"}
+          paddingLeft={"1rem"}
+          >
+          <ArrowBackIosNewIcon fontSize="12px"/>
+          {/* <Typography alignSelf={"center"}>Post</Typography> */}
+        </Box>
+      </div>
+    </Box>
   );
 }

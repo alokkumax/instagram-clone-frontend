@@ -18,7 +18,7 @@ export default function ProfileCard() {
       // bgcolor = {"pink"}
       minWidth={"100%"}
       maxWidth={"800px"}
-      paddingTop={!isMobile ? "4rem" : "2rem"}
+      paddingTop={!isMobile ? "3rem" : "2rem"}
       // minWidth = {"800px"}
     >
       <Box display={"flex"} justifyContent={"center"}>
@@ -32,13 +32,13 @@ export default function ProfileCard() {
         <Box
           display={"flex"}
           flexDirection={!isMobile ? "column" : "row"}
-          gap={"1rem"}
+          // gap={"1rem"}
           alignItems={"baseline"}
         >
           <Typography variant="p" className="username">
             alokkumax
           </Typography>
-          <Box gap={"10px"} display={"flex"} flexWrap={ !isMobile ? "wrap" : ""}>
+          <Box gap={"8px"} display={"flex"} flexWrap={ !isMobile ? "wrap" : ""}>
             <button className="btn">Profile</button>
             <button className="btn">Archieves</button>
             <button className="btn">AdTools</button>
@@ -47,7 +47,7 @@ export default function ProfileCard() {
             <Typography
               padding={"0.5rem 0rem"}
               fontFamily={"Nunito"}
-              fontSize={"16px"}
+              fontSize={"14px"}
             >
               344 accounts reached in the last 30 days.{" "}
               <Typography variant="span" fontWeight={"700"} color={"#000"}>

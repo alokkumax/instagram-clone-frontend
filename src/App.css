@@ -98,6 +98,14 @@
   object-fit: cover;
 
 }
+.postP{
+  /* background-color: #01bd20; */
+  width: 100%;
+  aspect-ratio: 4/3;
+  /* height: 550px; */
+  object-fit: cover;
+
+}
 .storyDiv{
   width: 3.5rem;
   height: 3.5rem;
@@ -187,13 +195,13 @@
   padding: 5px 15px;
   border-radius: 8px;
   color: black;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Poppins";
   font-weight: 400;
 }
 .dpProfile{
   border-radius: 50%;
-  padding: 2rem;
+  padding: 0.6rem;
   object-fit: cover;
 }
 .tabss{
@@ -249,7 +257,34 @@
   height: 100%;
   object-fit: cover;
 }
+/* Phone Modal */
+.modalp, .overlayp {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.modal-contentp {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  line-height: 1.4;
+  background: #ffffff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:100vh;
+  padding-top: 4rem;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  overflow: scroll;
 
+}
 /* //MODAL */
 body.active-modal {
   overflow-y: hidden;

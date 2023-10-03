@@ -1,10 +1,19 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box } from "@mui/material";
+import React from "react";
 
 const Explore = () => {
   return (
-    <Box  width={"100%"}>Explore</Box>
-  )
-}
+    <Box
+      flexDirection={"row"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      display={"flex"}
+      width={"100%"}
+      height={"100vh"}
+    >
+      Explore
+    </Box>
+  );
+};
 
-export default Explore
+export default Explore;

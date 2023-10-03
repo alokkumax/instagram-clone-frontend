@@ -40,6 +40,7 @@ export default function Highlights(props) {
     maxWidth={"700px"}
     flexWrap={"no-wrap"}
     marginTop={ isTablet ? "" : isMobile ? "3.7" : "1rem" }
+    marginBottom={"15px"}
     
     >
         <Box 
