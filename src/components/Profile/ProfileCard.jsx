@@ -32,13 +32,13 @@ export default function ProfileCard() {
         <Box
           display={"flex"}
           flexDirection={!isMobile ? "column" : "row"}
-          // gap={"1rem"}
+          gap={"10px"}
           alignItems={"baseline"}
         >
           <Typography variant="p" className="username">
             alokkumax
           </Typography>
-          <Box gap={"8px"} display={"flex"} flexWrap={ !isMobile ? "wrap" : ""}>
+          <Box gap={"10px"} display={"flex"} flexWrap={ !isMobile ? "wrap" : ""}>
             <button className="btn">Profile</button>
             <button className="btn">Archieves</button>
             <button className="btn">AdTools</button>
