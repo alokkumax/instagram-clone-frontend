@@ -39,7 +39,7 @@ export default function ModalPhone({currPost,toggleModal}) {
               flexDirection={"row"}
             >
               <Box gap={"0.5rem"} alignItems={"center"} display={"flex"}>
-                <img className="dp" src={currPost.url} />
+                <img className="dp" src="https://avatars.githubusercontent.com/u/59159355?v=4" />
                 <span style={{ fontWeight: "500", fontFamily: "Nunito" }}>
                   {currPost.username}
                 </span>
