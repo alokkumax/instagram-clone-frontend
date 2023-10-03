@@ -37,7 +37,9 @@ export default function Post() {
               <Box gap={"0.5rem"} alignItems={"center"} display={"flex"}>
                 <img className="dp" src={item.dp} />
                 <span style={{ fontWeight: "500", fontFamily: "Nunito" }}>
-                  {item.username}
+                 <a style={{textDecoration:"none", color:"black"}} href="/profile">
+                 {item.username}
+                 </a> 
                 </span>
               </Box>
               <div>

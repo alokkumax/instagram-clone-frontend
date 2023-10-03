@@ -5,7 +5,7 @@ const ProfileDesc = () => {
   const isMobile = useMediaQuery("(min-width:690px)");
 
   return (
-      <Box paddingTop={"1rem"} display={"flex"} flexDirection={"column"}>
+      <Box paddingTop={"0.5rem"} display={"flex"} flexDirection={"column"}>
         <Typography fontFamily={"Nunito"} padding={"0rem 0rem 0.5rem"}>
           <b>Alok Kumar</b>
         </Typography>

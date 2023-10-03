@@ -1,33 +1,33 @@
 const stories = [
     {
         id : 0,
-        pic : "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        pic : "https://avatars.githubusercontent.com/u/59159355?v=4",
         username : "alokkumax"
     },
     {
         id :1,
-        pic : "https://images.pexels.com/photos/18391462/pexels-photo-18391462/free-photo-of-snow-flight-man-bird.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        username : "aditya"
+        pic : "https://avatars.githubusercontent.com/u/57232570?v=4",
+        username : "aditya_xd"
     },
     {
         id : 2,
-        pic : "https://images.pexels.com/photos/16153033/pexels-photo-16153033/free-photo-of-man-in-trench-coat-standing-on-beach.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        username : "abhilashax"
+        pic : "https://avatars.githubusercontent.com/u/56017536?v=4",
+        username : "abhilasha"
     },
     {
         id : 3,
-        pic : "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        username : "nanuiya"
+        pic : "https://avatars.githubusercontent.com/u/56059682?v=4",
+        username : "niviii"
     },
     {
         id : 4,
-        pic : "https://images.pexels.com/photos/16153033/pexels-photo-16153033/free-photo-of-man-in-trench-coat-standing-on-beach.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        username : "abhinalok"
+        pic : "https://avatars.githubusercontent.com/u/56183187?v=4",
+        username : "anuscaaa"
     },
     {
         id : 5,
-        pic : "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        username : "alokkumax"
+        pic : "https://avatars.githubusercontent.com/u/53443872?v=4",
+        username : "aman_r"
     },
     {
         id :6,

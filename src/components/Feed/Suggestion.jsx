@@ -8,7 +8,7 @@ export default function Suggestion() {
     <Box bgcolor={""} paddingTop={"1rem"}  maxWidth={"360px"} minWidth={"280px"} >
       <Box >
         <Profile 
-          dp = "https://images.pexels.com/photos/18193622/pexels-photo-18193622/free-photo-of-smiling-woman-sitting-on-floor-and-leaning-arm-on-stool.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          dp = "https://avatars.githubusercontent.com/u/59159355?v=4"
           name = "alokkumax"
           hint = "Alok Kumar"
           btn = "btn"
@@ -24,7 +24,7 @@ export default function Suggestion() {
             <Profile
               dp = {item.pic}
               name = {item.username}
-              hint = {item.follower ? "Follows you" : "Followed by alokumax, ..."}
+              hint = {item.follower ? "Follows you" : "Followed by aditya_xd, ..."}
               btn = "Follow"
             />
           )

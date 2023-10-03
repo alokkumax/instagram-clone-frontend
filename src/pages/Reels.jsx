@@ -4,7 +4,6 @@ import { Box } from '@mui/material'
 const Reels = () => {
   return (
     <Box 
-    // alignItems={"center"}  
     flexDirection={"row"} 
     justifyContent={"center"} 
     alignItems={"center"}
