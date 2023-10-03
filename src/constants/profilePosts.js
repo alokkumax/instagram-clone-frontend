@@ -125,18 +125,18 @@ const profilePosts = [
             {   id: 2,
                 name : "nanu",
                 url : "https://images.pexels.com/photos/2957862/pexels-photo-2957862.jpeg?auto=compress&cs=tinysrgb&w=1600",
-                comment : "His coin fell down 🥺🤧",
+                comment : "🌏💙",
                 likes : 12,
                 replies : [
                     {   id:0,
-                        name : "alokkumax",
+                        name : "alokkuma",
                         url : "",
-                        comment : "@abhilasha_4sq mujhe Kyu toda 🥺"
+                        comment : "🥺"
                     },
                     {   id:1,
-                        name : "adityal69",
+                        name : "adityal_xd",
                         url : "",
-                        comment : "@alokkumax ur 100rs fall down"
+                        comment : "💗"
                     }
                 ]
             }
